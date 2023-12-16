@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRISTIAN STOLZENBACH</title>
-
-
-    
+    <style>
+        .bordered {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-<header><h1><a href="https://www.ejemplo.com">Palabra</a></h1></header>
+
+<img id="myImage" src="/ejercicio2/assets/img/1.jpg" onclick="changeBorder()" alt="Haz clic en la imagen">
+
+<script>
+function changeBorder() {
+    var img = document.getElementById("myImage");
+    if (img.classList.contains("bordered")) {
+        img.classList.remove("bordered");
+    } else {
+        img.classList.add("bordered");
+    }
+}
+</script>
+
 </body>
 </html>
