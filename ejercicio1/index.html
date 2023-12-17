@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Stolzenbach</title>
-    <a href="/ejercicio1/assets/css/styles.css"></a>
-
+    <style>
+        .bordered {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    <img id="myImage" src="/ejercicio1/assets/img/1.jpg" onclick="changeBorder()" alt="Haz clic en la imagen"> 
-    
-    
-    
-    
-    <script src="/index.js">
-    </script>
+
+<img id="myImage" src="/ejercicio2/assets/img/1.jpg" width="200" height="200" onclick="changeBorder()" alt="Haz clic en la imagen">
+
+<script>
+function changeBorder() {
+    var img = document.getElementById("myImage");
+    if (img.classList.contains("bordered")) {
+        img.classList.remove("bordered");
+    } else {
+        img.classList.add("bordered");
+    }
+}
+</script>
+
 </body>
 </html>
