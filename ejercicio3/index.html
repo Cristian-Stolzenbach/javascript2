@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRISTIAN STOLZENBACH</title>
-
+<link rel="stylesheet" href="/ejercicio3/assets/css/styles.css">
 
     
 </head>
-<body>
-<header><h1><a href="https://www.ejemplo.com">Palabra</a></h1></header>
+<body> 
+    <h1>Ingresa el password</h1>
+    <select id="digit1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="digit2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="digit3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <button onclick="checkPassword()">Ingresar</button>
+
+    <p id="message"></p>
+
+    <script>
+        function checkPassword() {
+            var digit1 = document.getElementById('digit1').value;
+            var digit2 = document.getElementById('digit2').value;
+            var digit3 = document.getElementById('digit3').value;
+
+            var password = digit1 + digit2 + digit3;
+
+            if (password === '911') {
+                document.getElementById('message').innerText = 'Password 1 correcto 911';
+            } else if (password === '714') {
+                document.getElementById('message').innerText = 'Password 2 es correcto 714';
+            } else {
+                document.getElementById('message').innerText = 'Password incorrecto';
+            }
+        }
+    </script>
 </body>
 </html>
