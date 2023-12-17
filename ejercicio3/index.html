@@ -45,10 +45,12 @@
         <option value="8">8</option>
         <option value="9">9</option>
     </select>
-
+<br>
+<p id="message"></p>
+<br>
     <button onclick="checkPassword()">Ingresar</button>
 
-    <p id="message"></p>
+    
 
     <script>
         function checkPassword() {
@@ -60,9 +62,11 @@
 
             if (password === '911') {
                 document.getElementById('message').innerText = 'Password 1 correcto 911';
-            } else if (password === '714') {
+            } 
+            else if (password === '714') {
                 document.getElementById('message').innerText = 'Password 2 es correcto 714';
-            } else {
+            } 
+            else {
                 document.getElementById('message').innerText = 'Password incorrecto';
             }
         }
