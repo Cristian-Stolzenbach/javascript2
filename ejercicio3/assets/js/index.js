@@ -1,4 +1,4 @@
-console.log (cuerdo)
+
 
 let color;
 
